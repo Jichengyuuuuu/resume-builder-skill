@@ -27,7 +27,7 @@
 将 `resume-builder-skill.md` 的内容作为 System Prompt 或 Skill 注入你使用的 Agent / LLM，然后直接告诉它：
 
 ```
-帮我生成一份简历，我要投产品经理岗位
+帮我生成一份简历，我要投产品经理岗位，我的工作主要是……
 ```
 
 或者：
