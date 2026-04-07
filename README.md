@@ -1,7 +1,9 @@
 # 📄 Resume Builder Skill
 
-> **一个提示词，生成一份让面试官眼前一亮的专业简历。**  
-> An AI skill for any agent or LLM — generate polished Chinese resumes in one shot.
+> **不用反复打磨措辞，不用花钱找人优化，不用花大量时间整理材料。**  
+> **把你有的东西——旧简历、JD、随手写的工作流水账——统统丢给模型，剩下的交给这个 Skill。**  
+>
+> Drop anything you have to any agent or LLM. No polishing, no expensive consultants, no prep work.
 
 ---
 
