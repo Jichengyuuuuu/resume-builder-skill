@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1500" viewBox="0 0 1000 1500">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",Arial,sans-serif}</style>
+<text x="58" y="54" font-size="33" font-weight="800" fill="#20242a" text-anchor="start">Mock Resume 示例</text>
+<line x1="58" y1="80" x2="942" y2="80" stroke="#d8dee8"/>
+<rect x="58" y="96" width="4" height="26" fill="#d8dee8"/>
+<text x="76" y="116" font-size="15" font-weight="400" fill="#5b6573" text-anchor="start">脱敏虚构示例，用于展示 Resume Builder Skill 生成的中文简历结构与表达方式。</text>
+<text x="58" y="166" font-size="32" font-weight="800" fill="#20242a" text-anchor="start">林澈</text>
+<text x="58" y="200" font-size="17" font-weight="500" fill="#333" text-anchor="start">AI 产品经理 / Agent 产品经理</text>
+<text x="58" y="225" font-size="15" font-weight="400" fill="#333" text-anchor="start">上海 ｜ linche@example.com ｜ github.com/example ｜ portfolio.example.com</text>
+<text x="58" y="267" font-size="25" font-weight="700" fill="#20242a" text-anchor="start">个人简介</text>
+<line x1="58" y1="283" x2="942" y2="283" stroke="#d8dee8" stroke-width="1"/>
+<text x="58" y="315" font-size="16" font-weight="400" fill="#222" text-anchor="start">AI 产品经理，长期关注 LLM 应用、Agent 工作流、知识库问答和企业效率工具。擅长将模</text>
+<text x="58" y="343" font-size="16" font-weight="400" fill="#222" text-anchor="start">糊业务需求拆解为可落地的 AI 产品方案，覆盖需求洞察、Prompt 设计、评测体系、用户</text>
+<text x="58" y="371" font-size="16" font-weight="400" fill="#222" text-anchor="start">反馈闭环和商业化验证。</text>
+<text x="58" y="423" font-size="25" font-weight="700" fill="#20242a" text-anchor="start">专业技能</text>
+<line x1="58" y1="439" x2="942" y2="439" stroke="#d8dee8" stroke-width="1"/>
+<text x="68" y="471" font-size="16" font-weight="700" fill="#003366" text-anchor="start">•</text>
+<text x="58" y="471" font-size="16" font-weight="400" fill="#222" text-anchor="start">AI 产品能力：LLM 应用设计、Agent 工作流、RAG 知识库、Prompt Engineering、</text>
+<text x="58" y="496" font-size="16" font-weight="400" fill="#222" text-anchor="start">模型评测</text>
+<text x="68" y="521" font-size="16" font-weight="700" fill="#003366" text-anchor="start">•</text>
+<text x="58" y="521" font-size="16" font-weight="400" fill="#222" text-anchor="start">产品方法论：用户研究、需求拆解、PRD 撰写、MVP 验证、路线图规划、跨团队推进</text>
+<text x="68" y="546" font-size="16" font-weight="700" fill="#003366" text-anchor="start">•</text>
+<text x="58" y="546" font-size="16" font-weight="400" fill="#222" text-anchor="start">数据与评估：转化漏斗、留存分析、A/B 实验、人工评测集、满意度与质量指标设计</text>
+<text x="68" y="571" font-size="16" font-weight="700" fill="#003366" text-anchor="start">•</text>
+<text x="58" y="571" font-size="16" font-weight="400" fill="#222" text-anchor="start">协作工具：Figma、Notion、飞书、Jira、SQL、Python 基础数据分析</text>
+<text x="58" y="620" font-size="25" font-weight="700" fill="#20242a" text-anchor="start">工作经历</text>
+<line x1="58" y1="636" x2="942" y2="636" stroke="#d8dee8" stroke-width="1"/>
+<text x="58" y="668" font-size="20" font-weight="700" fill="#20242a" text-anchor="start">星河智能科技 ｜ AI 产品经理 ｜ 2022-07 至今</text>
+<text x="58" y="702" font-size="16" font-weight="400" fill="#222" text-anchor="start">负责企业级 AI Agent 产品方向，覆盖智能问答、任务执行、知识库检索和工作流自动化，</text>
+<text x="58" y="729" font-size="16" font-weight="400" fill="#222" text-anchor="start">服务销售、客服、运营等内部业务团队。</text>
+<text x="68" y="764" font-size="17" font-weight="700" fill="#003366" text-anchor="start">•</text>
+<text x="92" y="764" font-size="16" font-weight="700" fill="#222" text-anchor="start">Agent 产品从 0 到 1：</text>
+<text x="332" y="764" font-size="16" font-weight="400" fill="#222" text-anchor="start">主导企业内部 AI Agent 平台的需求定义和 MVP 设计，完成角色配置</text>
+<text x="92" y="790" font-size="16" font-weight="400" fill="#222" text-anchor="start">、工具调用、知识库接入和运行日志等核心模块，支持 6 个业务团队试</text>
+<text x="92" y="816" font-size="16" font-weight="400" fill="#222" text-anchor="start">点使用</text>
+<text x="68" y="842" font-size="17" font-weight="700" fill="#003366" text-anchor="start">•</text>
+<text x="92" y="842" font-size="16" font-weight="700" fill="#222" text-anchor="start">知识库问答优化：</text>
+<text x="204" y="842" font-size="16" font-weight="400" fill="#222" text-anchor="start">围绕 RAG 检索召回、答案可信度和引用展示设计优化方案，将内部文档</text>
+<text x="92" y="868" font-size="16" font-weight="400" fill="#222" text-anchor="start">问答的有效回答率从 68% 提升至 86%</text>
+<text x="68" y="894" font-size="17" font-weight="700" fill="#003366" text-anchor="start">•</text>
+<text x="92" y="894" font-size="16" font-weight="700" fill="#222" text-anchor="start">评测体系建设：</text>
+<text x="188" y="894" font-size="16" font-weight="400" fill="#222" text-anchor="start">设计覆盖准确性、完整性、安全性和可执行性的 Agent 评测框架，沉淀</text>
+<text x="92" y="920" font-size="16" font-weight="400" fill="#222" text-anchor="start"> 300+ 条真实业务样例，用于版本发布前回归测试</text>
+<text x="68" y="946" font-size="17" font-weight="700" fill="#003366" text-anchor="start">•</text>
+<text x="92" y="946" font-size="16" font-weight="700" fill="#222" text-anchor="start">用户反馈闭环：</text>
+<text x="188" y="946" font-size="16" font-weight="400" fill="#222" text-anchor="start">建立从用户反馈、会话日志、低分答案到 Prompt / 检索策略优化的闭</text>
+<text x="92" y="972" font-size="16" font-weight="400" fill="#222" text-anchor="start">环机制，使重点场景问题定位时间缩短 40%</text>
+<text x="58" y="1012" font-size="20" font-weight="700" fill="#20242a" text-anchor="start">云杉协同软件 ｜ B 端产品经理 ｜ 2020-06 至 2022-06</text>
+<text x="68" y="1046" font-size="17" font-weight="700" fill="#003366" text-anchor="start">•</text>
+<text x="92" y="1046" font-size="16" font-weight="700" fill="#222" text-anchor="start">流程自动化设计：</text>
+<text x="204" y="1046" font-size="16" font-weight="400" fill="#222" text-anchor="start">负责可视化流程编排模块，支持条件分支、审批节点和消息通知配置，帮</text>
+<text x="92" y="1072" font-size="16" font-weight="400" fill="#222" text-anchor="start">助客户将线下流程迁移到线上</text>
+<text x="68" y="1098" font-size="17" font-weight="700" fill="#003366" text-anchor="start">•</text>
+<text x="92" y="1098" font-size="16" font-weight="700" fill="#222" text-anchor="start">客户需求转化：</text>
+<text x="188" y="1098" font-size="16" font-weight="400" fill="#222" text-anchor="start">参与 20+ 次重点客户访谈，将高频定制需求抽象为通用配置能力，减少</text>
+<text x="92" y="1124" font-size="16" font-weight="400" fill="#222" text-anchor="start">交付侧重复开发成本</text>
+<text x="58" y="1174" font-size="25" font-weight="700" fill="#20242a" text-anchor="start">项目经验</text>
+<line x1="58" y1="1190" x2="942" y2="1190" stroke="#d8dee8" stroke-width="1"/>
+<text x="58" y="1222" font-size="19" font-weight="700" fill="#20242a" text-anchor="start">企业 AI Agent 控制台</text>
+<text x="68" y="1252" font-size="17" font-weight="700" fill="#003366" text-anchor="start">•</text>
+<text x="92" y="1252" font-size="16" font-weight="700" fill="#222" text-anchor="start">项目背景：</text>
+<text x="156" y="1252" font-size="16" font-weight="400" fill="#222" text-anchor="start">企业内部多个业务团队希望使用 AI Agent 处理问答、数据查询和任务执</text>
+<text x="92" y="1278" font-size="16" font-weight="400" fill="#222" text-anchor="start">行，但缺少统一的角色配置、权限控制和效果评估能力。</text>
+<text x="68" y="1304" font-size="17" font-weight="700" fill="#003366" text-anchor="start">•</text>
+<text x="92" y="1304" font-size="16" font-weight="700" fill="#222" text-anchor="start">个人贡献：</text>
+<text x="156" y="1304" font-size="16" font-weight="400" fill="#222" text-anchor="start">设计 Agent 创建、工具授权、知识库绑定、运行日志和效果评估模块，</text>
+<text x="92" y="1330" font-size="16" font-weight="400" fill="#222" text-anchor="start">明确管理员、创建者和使用者的权限边界。</text>
+<text x="58" y="1366" font-size="19" font-weight="700" fill="#20242a" text-anchor="start">知识库问答质量评估系统</text>
+<text x="68" y="1396" font-size="17" font-weight="700" fill="#003366" text-anchor="start">•</text>
+<text x="92" y="1396" font-size="16" font-weight="700" fill="#222" text-anchor="start">项目背景：</text>
+<text x="156" y="1396" font-size="16" font-weight="400" fill="#222" text-anchor="start">内部知识库问答在长文档、政策类问题和跨文档检索场景下容易出现回答</text>
+<text x="92" y="1422" font-size="16" font-weight="400" fill="#222" text-anchor="start">不完整、引用不准确的问题。</text>
+<text x="68" y="1448" font-size="17" font-weight="700" fill="#003366" text-anchor="start">•</text>
+<text x="92" y="1448" font-size="16" font-weight="700" fill="#222" text-anchor="start">个人贡献：</text>
+<text x="156" y="1448" font-size="16" font-weight="400" fill="#222" text-anchor="start">设计评测集结构、人工标注规范和质量评分维度，推动算法团队基于真实</text>
+<text x="92" y="1474" font-size="16" font-weight="400" fill="#222" text-anchor="start">低分样例优化召回和重排策略。</text>
+<text x="58" y="1534" font-size="25" font-weight="700" fill="#20242a" text-anchor="start">教育背景</text>
+<line x1="58" y1="1550" x2="942" y2="1550" stroke="#d8dee8" stroke-width="1"/>
+<text x="58" y="1582" font-size="16" font-weight="400" fill="#222" text-anchor="start">某大学 ｜ 信息管理与信息系统 ｜ 本科 ｜ 2016-09 至 2020-06</text>
+<text x="58" y="1648" font-size="25" font-weight="700" fill="#20242a" text-anchor="start">高阶顾问建议</text>
+<line x1="58" y1="1664" x2="942" y2="1664" stroke="#d8dee8" stroke-width="1"/>
+<text x="68" y="1696" font-size="17" font-weight="700" fill="#003366" text-anchor="start">•</text>
+<text x="92" y="1696" font-size="16" font-weight="700" fill="#222" text-anchor="start">补充业务指标：</text>
+<text x="188" y="1696" font-size="16" font-weight="400" fill="#222" text-anchor="start">当前简历已体现 AI 产品能力，正式投递时建议补充试点团队规模、留</text>
+<text x="92" y="1722" font-size="16" font-weight="400" fill="#222" text-anchor="start">存、调用量或满意度等可公开指标。</text>
+<text x="68" y="1748" font-size="17" font-weight="700" fill="#003366" text-anchor="start">•</text>
+<text x="92" y="1748" font-size="16" font-weight="700" fill="#222" text-anchor="start">强化岗位匹配：</text>
+<text x="188" y="1748" font-size="16" font-weight="400" fill="#222" text-anchor="start">如果目标是 Agent 产品经理，可在面试中重点讲清楚工具调用、权限边</text>
+<text x="92" y="1774" font-size="16" font-weight="400" fill="#222" text-anchor="start">界和评测体系的设计取舍。</text>
+<text x="500.0" y="1466" font-size="13" font-weight="400" fill="#8a94a3" text-anchor="middle">Generated mock for resume-builder-skill · no real personal data</text>
+</svg>
