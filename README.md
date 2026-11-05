@@ -1,5 +1,13 @@
 # 📄 Resume Builder Skill：你的 AI 简历专家 | 自动生成简历 & 求职找工作优化工具
 
+**Turn rough background notes into an ATS-friendly Chinese resume (HTML + DOCX).**
+
+**把粗糙的背景材料，一次写成可投递的中文简历（HTML + DOCX，含 ATS 优化）。**
+
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/Jichengyuuuuu/resume-builder-skill)](https://github.com/Jichengyuuuuu/resume-builder-skill/stargazers)
+[![Last commit](https://img.shields.io/github/last-commit/Jichengyuuuuu/resume-builder-skill)](https://github.com/Jichengyuuuuu/resume-builder-skill/commits/main)
+
 > **不用反复打磨措辞，不用花钱找人优化，不用花大量时间整理材料。**  
 > **把你有的东西——旧简历、目标岗位JD、随手写的工作流水账、工作项目文档——统统丢给模型，剩下的交给这个 Skill。**
 >
@@ -8,9 +16,7 @@
 
 ![Resume Builder Skill 工作流概览](./resume-builder-skill-overview.png)
 
----
-
-## ✨ 为什么选择这个简历生成 Skill？
+## ✨ 为什么选择这个简历生成 Skill？ / What you get
 
 传统简历优化的问题：找人改，贵且慢；自己写，来回打磨措辞耗时耗力；用 AI，又总是需要反复"调教"才能得到满意的结果。
 
@@ -22,11 +28,33 @@
 - 🗂️ **双格式输出** — 同时生成 HTML（在线预览）和 DOCX（Word 可编辑），无水印，完全归属于你
 - 💡 **附赠"高阶顾问"求职建议** — 简历生成后自动输出 3-5 条专家视角的职场建议，助你提升求职胜率
 
+## 👀 成品长什么样
+
+仓库里已有一份脱敏虚构示例 [`mock-resume.svg`](./mock-resume.svg)，用来看最终版式、层级，以及「加粗概括 + 冒号」的经历写法。图中人物、公司和数字都是虚构的。
+
+<p align="center">
+  <a href="./mock-resume.svg"><img src="./mock-resume.svg" alt="脱敏虚构简历示例" width="460" /></a>
+</p>
+
+**Demo GIF 占位：** 「粗糙笔记 → 成品简历」的对比动图还没放进仓库。把文件放到根目录 `demo.gif` 后，用下面这行替换本段即可显示：
+
+```markdown
+![从粗糙笔记到成品简历](./demo.gif)
+```
+
+<!--
+TODO(owner): drop a demo GIF or before/after screenshot here (rough notes -> finished resume).
+Do not commit a fabricated image. Suggested path: ./demo.gif
+Replace this comment with:
+
+![从粗糙笔记到成品简历](./demo.gif)
+-->
+
 ---
 
 ## 🚀 快速开始
 
-将 `resume-builder-skill.md` 的内容作为 System Prompt 或 Skill 注入你使用的 Agent / LLM，然后直接说：
+支持 Skills 的工具，按下方「兼容性」把整个 `resume-builder` 文件夹放到对应目录。其余产品把 [`resume-builder/SKILL.md`](./resume-builder/SKILL.md) 全文贴进 System Prompt。然后直接说：
 
 ```
 帮我生成一份简历，我要投产品经理岗位，我的工作主要是……
@@ -122,32 +150,42 @@ Skill 会自动完成信息收集与简历生成，一次性输出可投递的�
 
 ---
 
-## 📦 兼容性 — 适用于任何主流 AI 平台
+## 📦 兼容性 — Skills 目录与系统提示词
 
-本 Skill 不绑定任何平台，只要支持 System Prompt 即可使用：
+**Agents that load `SKILL.md` can use the folder directly. Everyone else: paste it as the system prompt.**
 
-| 平台 | 支持状态 |
-|------|---------|
-| Claude (claude.ai / Claude Code) | ✅ 完全支持 |
-| ChatGPT (GPT-4o / GPT-4) | ✅ 完全支持 |
-| Gemini | ✅ 完全支持 |
-| 通义千问 / 文心一言 / Kimi 等国内大模型 | ✅ 完全支持 |
-| 任意 Agent 框架（LangChain、AutoGen 等）| ✅ 完全支持 |
-| 本地 Ollama / 开源模型 | ⚠️ 建议使用能力较强的模型 |
+技能目录是 [`resume-builder/`](./resume-builder/)（`SKILL.md` 里 `name: resume-builder`）。复制整个文件夹，文件夹名保持 `resume-builder`。下表路径按各家当前文档核对；没有核实到自动发现的，只写成贴系统提示词。
+
+| 工具 | 怎么用 |
+|------|--------|
+| Claude Code | 个人 `~/.claude/skills/resume-builder/`，项目 `.claude/skills/resume-builder/`。直接说「帮我写简历」，或输入 `/resume-builder`。 |
+| Claude.ai | 把 `resume-builder` 打成 zip，在 **Settings → Features** 上传。需要 Pro / Max / Ultra / Team / Enterprise，并开启 code execution。按账号保存，没有本地目录。 |
+| Codex CLI / IDE，ChatGPT 桌面版 | 个人 `~/.agents/skills/resume-builder/`，项目 `.agents/skills/resume-builder/`。CLI 与 IDE 用 `/skills` 或 `$resume-builder`；桌面版在侧边栏 Skills 查看，聊天用 `@`。网页版 ChatGPT 不读这个本地目录。 |
+| Cursor | 个人 `~/.cursor/skills/resume-builder/` 或 `~/.agents/skills/resume-builder/`；项目 `.cursor/skills/resume-builder/` 或 `.agents/skills/resume-builder/`。在 Agent 聊天输入 `/resume-builder`。 |
+| GitHub Copilot | 项目 `.github/skills/resume-builder/`（也认 `.agents/skills/`、`.claude/skills/`）；个人 `~/.copilot/skills/resume-builder/` 或 `~/.agents/skills/resume-builder/`。适用于 VS Code 与 JetBrains 的 agent mode、Copilot CLI、Copilot app、cloud agent。 |
+| Gemini CLI | 个人 `~/.gemini/skills/resume-builder/`，项目 `.gemini/skills/resume-builder/`（也认对应的 `.agents/skills/`）。工作区目录需标记为 trusted。用 `/skills list` 确认。 |
+| 系统提示词（通用） | ChatGPT 网页、Gemini 网页、通义千问、文心一言、Kimi、Ollama，以及任何能改 system prompt 的 Agent：把 `SKILL.md` 全文贴进去。未核实这些产品会按上表自动发现技能目录。模型越强，成稿越稳。 |
+
+同一份 `~/.agents/skills/resume-builder/` 可同时给 Codex、Cursor、Copilot、Gemini CLI 用。OpenCode 另读 `.opencode/skills/`、`.agents/skills/`、`.claude/skills/`（用户级还有 `~/.config/opencode/skills/`）。Cline 读 `.cline/skills/` 与 `~/.cline/skills/`（项目里也认 `.claude/skills/`）。Windsurf / Devin Desktop 读 `.agents/skills/`、`~/.agents/skills/` 和 `.devin/skills/`（旧的 `.windsurf/skills/` 仍会扫描）。
+
+`SKILL.md` 里的 DOCX 步骤写了 Claude 环境路径（`/home/claude`、`/mnt/user-data/outputs/`）。其他 Agent 仍可按其中的写作规则生成 HTML；DOCX 取决于该环境能否安装 `docx` 并写文件。
 
 ---
 
 ## 📁 文件说明
 
 ```
-resume-builder-skill.md   # Skill 主文件，包含完整的简历生成提示词和工作流
+resume-builder/SKILL.md            # Skill 主文件，包含完整的简历生成提示词和工作流
+mock-resume.svg                    # 脱敏虚构的简历版式示例
+resume-builder-skill-overview.png  # 工作流概览图
+LICENSE                            # MIT License
 ```
 
 ---
 
 ## 📄 License
 
-MIT License — 自由使用、修改和分发。
+[MIT License](./LICENSE) — 自由使用、修改和分发。
 
 ---
 
