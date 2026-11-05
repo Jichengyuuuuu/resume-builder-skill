@@ -14,6 +14,8 @@
 > Drop anything you have to any agent or LLM. No polishing, no expensive resume consultants, no prep work needed.  
 > The skill handles resume generation, ATS optimization, and career advice — all in one shot.
 
+![Resume Builder Skill 工作流概览](./resume-builder-skill-overview.png)
+
 ## ✨ 为什么选择这个简历生成 Skill？ / What you get
 
 传统简历优化的问题：找人改，贵且慢；自己写，来回打磨措辞耗时耗力；用 AI，又总是需要反复"调教"才能得到满意的结果。
@@ -25,8 +27,6 @@
 - 🔍 **ATS 友好** — 关键词自动对齐目标岗位 JD，帮你的简历轻松通过企业招聘系统自动筛选
 - 🗂️ **双格式输出** — 同时生成 HTML（在线预览）和 DOCX（Word 可编辑），无水印，完全归属于你
 - 💡 **附赠"高阶顾问"求职建议** — 简历生成后自动输出 3-5 条专家视角的职场建议，助你提升求职胜率
-
-![Resume Builder Skill 工作流概览](./resume-builder-skill-overview.png)
 
 ## 👀 成品长什么样
 
@@ -54,7 +54,7 @@ Replace this comment with:
 
 ## 🚀 快速开始
 
-将 [`resume-builder/SKILL.md`](./resume-builder/SKILL.md) 的内容作为 System Prompt 或 Skill 注入你使用的 Agent / LLM，然后直接说：
+支持 Skills 的工具，按下方「兼容性」把整个 `resume-builder` 文件夹放到对应目录。其余产品把 [`resume-builder/SKILL.md`](./resume-builder/SKILL.md) 全文贴进 System Prompt。然后直接说：
 
 ```
 帮我生成一份简历，我要投产品经理岗位，我的工作主要是……
@@ -150,18 +150,25 @@ Skill 会自动完成信息收集与简历生成，一次性输出可投递的�
 
 ---
 
-## 📦 兼容性 — 适用于任何主流 AI 平台
+## 📦 兼容性 — Skills 目录与系统提示词
 
-本 Skill 不绑定任何平台，只要支持 System Prompt 即可使用：
+**Agents that load `SKILL.md` can use the folder directly. Everyone else: paste it as the system prompt.**
 
-| 平台 | 支持状态 |
-|------|---------|
-| Claude (claude.ai / Claude Code) | ✅ 完全支持 |
-| ChatGPT (GPT-4o / GPT-4) | ✅ 完全支持 |
-| Gemini | ✅ 完全支持 |
-| 通义千问 / 文心一言 / Kimi 等国内大模型 | ✅ 完全支持 |
-| 任意 Agent 框架（LangChain、AutoGen 等）| ✅ 完全支持 |
-| 本地 Ollama / 开源模型 | ⚠️ 建议使用能力较强的模型 |
+技能目录是 [`resume-builder/`](./resume-builder/)（`SKILL.md` 里 `name: resume-builder`）。复制整个文件夹，文件夹名保持 `resume-builder`。下表路径按各家当前文档核对；没有核实到自动发现的，只写成贴系统提示词。
+
+| 工具 | 怎么用 |
+|------|--------|
+| Claude Code | 个人 `~/.claude/skills/resume-builder/`，项目 `.claude/skills/resume-builder/`。直接说「帮我写简历」，或输入 `/resume-builder`。 |
+| Claude.ai | 把 `resume-builder` 打成 zip，在 **Settings → Features** 上传。需要 Pro / Max / Ultra / Team / Enterprise，并开启 code execution。按账号保存，没有本地目录。 |
+| Codex CLI / IDE，ChatGPT 桌面版 | 个人 `~/.agents/skills/resume-builder/`，项目 `.agents/skills/resume-builder/`。CLI 与 IDE 用 `/skills` 或 `$resume-builder`；桌面版在侧边栏 Skills 查看，聊天用 `@`。网页版 ChatGPT 不读这个本地目录。 |
+| Cursor | 个人 `~/.cursor/skills/resume-builder/` 或 `~/.agents/skills/resume-builder/`；项目 `.cursor/skills/resume-builder/` 或 `.agents/skills/resume-builder/`。在 Agent 聊天输入 `/resume-builder`。 |
+| GitHub Copilot | 项目 `.github/skills/resume-builder/`（也认 `.agents/skills/`、`.claude/skills/`）；个人 `~/.copilot/skills/resume-builder/` 或 `~/.agents/skills/resume-builder/`。适用于 VS Code 与 JetBrains 的 agent mode、Copilot CLI、Copilot app、cloud agent。 |
+| Gemini CLI | 个人 `~/.gemini/skills/resume-builder/`，项目 `.gemini/skills/resume-builder/`（也认对应的 `.agents/skills/`）。工作区目录需标记为 trusted。用 `/skills list` 确认。 |
+| 系统提示词（通用） | ChatGPT 网页、Gemini 网页、通义千问、文心一言、Kimi、Ollama，以及任何能改 system prompt 的 Agent：把 `SKILL.md` 全文贴进去。未核实这些产品会按上表自动发现技能目录。模型越强，成稿越稳。 |
+
+同一份 `~/.agents/skills/resume-builder/` 可同时给 Codex、Cursor、Copilot、Gemini CLI 用。OpenCode 另读 `.opencode/skills/`、`.agents/skills/`、`.claude/skills/`（用户级还有 `~/.config/opencode/skills/`）。Cline 读 `.cline/skills/` 与 `~/.cline/skills/`（项目里也认 `.claude/skills/`）。Windsurf / Devin Desktop 读 `.agents/skills/`、`~/.agents/skills/` 和 `.devin/skills/`（旧的 `.windsurf/skills/` 仍会扫描）。
+
+`SKILL.md` 里的 DOCX 步骤写了 Claude 环境路径（`/home/claude`、`/mnt/user-data/outputs/`）。其他 Agent 仍可按其中的写作规则生成 HTML；DOCX 取决于该环境能否安装 `docx` 并写文件。
 
 ---
 
