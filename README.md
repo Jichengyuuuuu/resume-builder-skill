@@ -1,16 +1,20 @@
 # 📄 Resume Builder Skill：你的 AI 简历专家 | 自动生成简历 & 求职找工作优化工具
 
+**Turn rough background notes into an ATS-friendly Chinese resume (HTML + DOCX).**
+
+**把粗糙的背景材料，一次写成可投递的中文简历（HTML + DOCX，含 ATS 优化）。**
+
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/Jichengyuuuuu/resume-builder-skill)](https://github.com/Jichengyuuuuu/resume-builder-skill/stargazers)
+[![Last commit](https://img.shields.io/github/last-commit/Jichengyuuuuu/resume-builder-skill)](https://github.com/Jichengyuuuuu/resume-builder-skill/commits/main)
+
 > **不用反复打磨措辞，不用花钱找人优化，不用花大量时间整理材料。**  
 > **把你有的东西——旧简历、目标岗位JD、随手写的工作流水账、工作项目文档——统统丢给模型，剩下的交给这个 Skill。**
 >
 > Drop anything you have to any agent or LLM. No polishing, no expensive resume consultants, no prep work needed.  
 > The skill handles resume generation, ATS optimization, and career advice — all in one shot.
 
-![Resume Builder Skill 工作流概览](./resume-builder-skill-overview.png)
-
----
-
-## ✨ 为什么选择这个简历生成 Skill？
+## ✨ 为什么选择这个简历生成 Skill？ / What you get
 
 传统简历优化的问题：找人改，贵且慢；自己写，来回打磨措辞耗时耗力；用 AI，又总是需要反复"调教"才能得到满意的结果。
 
@@ -22,11 +26,35 @@
 - 🗂️ **双格式输出** — 同时生成 HTML（在线预览）和 DOCX（Word 可编辑），无水印，完全归属于你
 - 💡 **附赠"高阶顾问"求职建议** — 简历生成后自动输出 3-5 条专家视角的职场建议，助你提升求职胜率
 
+![Resume Builder Skill 工作流概览](./resume-builder-skill-overview.png)
+
+## 👀 成品长什么样
+
+仓库里已有一份脱敏虚构示例 [`mock-resume.svg`](./mock-resume.svg)，用来看最终版式、层级，以及「加粗概括 + 冒号」的经历写法。图中人物、公司和数字都是虚构的。
+
+<p align="center">
+  <a href="./mock-resume.svg"><img src="./mock-resume.svg" alt="脱敏虚构简历示例" width="460" /></a>
+</p>
+
+**Demo GIF 占位：** 「粗糙笔记 → 成品简历」的对比动图还没放进仓库。把文件放到根目录 `demo.gif` 后，用下面这行替换本段即可显示：
+
+```markdown
+![从粗糙笔记到成品简历](./demo.gif)
+```
+
+<!--
+TODO(owner): drop a demo GIF or before/after screenshot here (rough notes -> finished resume).
+Do not commit a fabricated image. Suggested path: ./demo.gif
+Replace this comment with:
+
+![从粗糙笔记到成品简历](./demo.gif)
+-->
+
 ---
 
 ## 🚀 快速开始
 
-将 `resume-builder-skill.md` 的内容作为 System Prompt 或 Skill 注入你使用的 Agent / LLM，然后直接说：
+将 [`resume-builder/SKILL.md`](./resume-builder/SKILL.md) 的内容作为 System Prompt 或 Skill 注入你使用的 Agent / LLM，然后直接说：
 
 ```
 帮我生成一份简历，我要投产品经理岗位，我的工作主要是……
@@ -140,14 +168,17 @@ Skill 会自动完成信息收集与简历生成，一次性输出可投递的�
 ## 📁 文件说明
 
 ```
-resume-builder-skill.md   # Skill 主文件，包含完整的简历生成提示词和工作流
+resume-builder/SKILL.md            # Skill 主文件，包含完整的简历生成提示词和工作流
+mock-resume.svg                    # 脱敏虚构的简历版式示例
+resume-builder-skill-overview.png  # 工作流概览图
+LICENSE                            # MIT License
 ```
 
 ---
 
 ## 📄 License
 
-MIT License — 自由使用、修改和分发。
+[MIT License](./LICENSE) — 自由使用、修改和分发。
 
 ---
 
